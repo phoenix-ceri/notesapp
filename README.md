@@ -17,6 +17,7 @@
 
   ## Installation
   there is no instal. this app runs off heroku
+  https://note-application-fifi.herokuapp.com
 
   ## Usage
   open the heroku link. then click the start button. type the note out. save it and then acess it later!
