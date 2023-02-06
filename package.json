@@ -1,24 +1,70 @@
 {
-  "name": "note-taker",
+  "name": "notesapp",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "dependencies": {
+    "accepts": "^1.3.8",
+    "body-parser": "^1.20.1",
+    "bytes": "^3.1.2",
+    "ansi-regex": "^5.0.1",
+    "call-bind": "^1.0.2",
+    "content-disposition": "^0.5.4",
+    "content-type": "^1.0.5",
+    "cookie": "^0.5.0",
+    "destroy": "^1.2.0",
+    "ee-first": "^1.1.1",
+    "depd": "^2.0.0",
+    "encodeurl": "^1.0.2",
+    "escape-html": "^1.0.3",
+    "etag": "^1.8.1",
+    "express": "^4.18.2",
+    "finalhandler": "^1.2.0",
+    "forwarded": "^0.2.0",
+    "fresh": "^0.5.2",
+    "function-bind": "^1.1.1",
+    "get-intrinsic": "^1.2.0",
+    "has": "^1.0.3",
+    "inquirer": "^7.0.4",
+    "has-symbols": "^1.0.3",
+    "http-errors": "^2.0.0",
+    "ipaddr.js": "^1.9.1",
+    "lodash": "^4.17.21",
+    "media-typer": "^0.3.0",
+    "mime-types": "^2.1.35",
+    "mime-db": "^1.52.0",
+    "mime": "^1.6.0",
+    "mysql": "^2.18.1",
+    "ms": "^2.0.0",
+    "negotiator": "^0.6.3",
+    "on-finished": "^2.4.1",
+    "object-inspect": "^1.12.3",
+    "path": "^0.12.7",
+    "proxy-addr": "^2.0.7",
+    "qs": "^6.11.0",
+    "raw-body": "^2.5.1",
+    "send": "^0.18.0",
+    "serve-static": "^1.15.0",
+    "side-channel": "^1.0.4",
+    "setprototypeof": "^1.2.0",
+    "statuses": "^2.0.1",
+    "toidentifier": "^1.0.1",
+    "unpipe": "^1.0.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/phoenix-ceri/notesapp"
+    "url": "git+https://github.com/phoenix-ceri/notesapp.git"
   },
   "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/phoenix-ceri/notesapp/issues"
   },
-  "homepage": "https://github.com/phoenix-ceri/notesapp/blob/main/README.md"
+  "homepage": "https://github.com/phoenix-ceri/notesapp#readme"
 }
