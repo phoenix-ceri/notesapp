@@ -3,21 +3,21 @@
 // We are linking our routes to a series of "data" sources.
 // These data sources hold arrays of information on table-data, waitinglist, etc.
 // ===============================================================================
-const fs = require('fs');
+const fs = require("fs");
 
 // ===============================================================================
 // ROUTING
 // ===============================================================================
 
-module.exports = function(app) {
+module.exports = function (app) {
   // API GET Requests
   // Below code handles when users "visit" a page.
   // In each of the below cases when a user visits a link
   // (ex: localhost:PORT/api/admin... they are shown a JSON of the data in the table)
   // ---------------------------------------------------------------------------
   // Routes - one to index, one to notes
-  app.get('/api/notes', function(req, res) {
-    fs.readFile('./db/db.json', (err, data) => {
+  app.get("/api/notes", function (req, res) {
+    fs.readFile("./db/db.json", (err, data) => {
       if (err) throw err;
       dbData = JSON.parse(data);
       res.send(dbData);
@@ -34,10 +34,10 @@ module.exports = function(app) {
 
   // API POST Requests
 
-  app.post('/api/notes', function(req, res) {
+  app.post("/api/notes", function (req, res) {
     const userNotes = req.body;
 
-    fs.readFile('./db/db.json', (err, data) => {
+    fs.readFile("./db/db.json", (err, data) => {
       if (err) throw err;
       dbData = JSON.parse(data);
       dbData.push(userNotes);
@@ -51,21 +51,21 @@ module.exports = function(app) {
 
       stringData = JSON.stringify(dbData);
 
-      fs.writeFile('./db/db.json', stringData, (err, data) => {
+      fs.writeFile("./db/db.json", stringData, (err, data) => {
         if (err) throw err;
       });
     });
-    res.send('Thank you for your note!');
+    res.send("Thank you for your note!");
   });
 
   // API DELETE Requests
   // API route that allows user to delete a note and updates json data
-  app.delete('/api/notes/:id', function(req, res) {
+  app.delete("/api/notes/:id", function (req, res) {
     // Gets id number of note to delete
     const deleteNote = req.params.id;
     console.log(deleteNote);
 
-    fs.readFile('./db/db.json', (err, data) => {
+    fs.readFile("./db/db.json", (err, data) => {
       if (err) throw err;
 
       // Comparing each note's id to delete note
@@ -79,7 +79,7 @@ module.exports = function(app) {
       console.log(dbData);
       stringData = JSON.stringify(dbData);
 
-      fs.writeFile('./db/db.json', stringData, (err, data) => {
+      fs.writeFile("./db/db.json", stringData, (err, data) => {
         if (err) throw err;
       });
     });
