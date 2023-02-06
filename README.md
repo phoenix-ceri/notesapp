@@ -20,6 +20,8 @@
 
   ## Usage
   open the heroku link. then click the start button. type the note out. save it and then acess it later!
+  ![login](./public/assets/images/image.png)
+  ![app](./public/assets/images/image1.png)
 
   ## Licenses
     This project is covered under the MIT license. To learn more about what this means, click the license button at the top.
